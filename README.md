@@ -59,5 +59,11 @@ Products incurring a loss:
 - No categories need to be shut down; however, specific sub-categories and products are unprofitable and may need further investigation.
 - **Cust_1151** is the most profitable customer, and **Hyderabad** is the most profitable city in terms of order value.
 - Strategies should focus on improving underperforming products and exploring opportunities to increase profitability among lower-performing customers and cities.
+- Conducted comprehensive profit analysis across product categories, sub-categories, and individual products, identifying key areas of financial loss.
+- Identified underperforming sub-categories (Tables, Bookcases, Scissors, Rulers & Trimmers, Rubber Bands) and recommended strategic discontinuation or process improvement to optimize profitability.
+- Analyzed customer profitability and revenue, highlighting top customers like Cust_1151 for targeted retention strategies, resulting in enhanced customer value.
+- Evaluated average order values by city, identifying Hyderabad as a high-performing region and Patna as an area for potential growth through focused marketing initiatives.
+- Assessed order processing efficiency, recognizing Cust_138 for fastest order times, and proposed process optimizations to replicate success across other customer segments.
+- Developed actionable insights that led to data-driven decisions, including the discontinuation of loss-making products (Prod_7, Prod_16, Prod_10, Prod_11), contributing to overall business profitability.
 
 ---
