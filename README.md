@@ -1,7 +1,7 @@
 
 ---
 
-# Case Study Analysis
+# Superstore Sales Analysis
 
 ## Overview
 
