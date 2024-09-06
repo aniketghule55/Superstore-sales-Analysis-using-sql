@@ -52,7 +52,7 @@ Products incurring a loss:
 ## City Analysis
 
 ### Average Order Value Per City
-- **Hyderabad**: The highest average order value is
+- **Hyderabad**: The highest average order value is 3082
 - **Patna**: Lowest number of orders.
 
 ## Conclusion
