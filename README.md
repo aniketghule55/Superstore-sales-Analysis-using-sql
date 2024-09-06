@@ -53,7 +53,7 @@ Products incurring a loss:
 
 ### Average Order Value Per City
 - **Hyderabad**: The highest average order value is 3082
-- **Patna**: Lowest number of orders.
+- **Patna**: The lowest number of orders value is 1354
 
 ## Conclusion
 - No categories need to be shut down; however, specific sub-categories and products are unprofitable and may need further investigation.
