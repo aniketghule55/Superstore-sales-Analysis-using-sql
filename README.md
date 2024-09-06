@@ -47,7 +47,7 @@ Products incurring a loss:
 - **Cust_1151**: Most profitable and generates the most revenue for the company.
 
 ### Average Profit and Revenue Per Customer
-- **Cust_1642**: Has the highest average revenue among other customers.
+- **Cust_1642**: Has the highest average revenue among other all customers.
 
 ## City Analysis
 
