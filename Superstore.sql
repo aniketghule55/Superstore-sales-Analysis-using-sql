@@ -1,14 +1,14 @@
 USE market_star_schema;
 
 /*-------------------------------------------------------------------------------------------
-Problem statement: Growth team wants to understand sustainable(profitable) product categories
+Problem statement:  wants to understand sustainable(profitable) product categories
 Sustainability can be achieved when we make better profits or at least positive profits.
 	We can look at the profits per product category.
 	We can look at profits per product subcategory. 
 --------------------------------------------------------------------------------------------*/
 
--- Summary at Prodcut Category and Sub category. 
--- 1.1 Find the category wise profit. Which ones should we shut down? 
+-- Summary at Product Category and Sub-category. 
+-- 1.1 Find the category-wise profit. Which ones should we shut down? 
 create view 
 pract as 
 select p.prod_id,p.product_category,p.product_sub_category,m.profit 
@@ -18,7 +18,7 @@ select product_category, sum(profit) as total_profit
 from pract group by product_category;
             
 
--- 1.2 Find the sub category wise profit. Which ones should we shut down? 
+-- 1.2 Find the sub-category-wise profit. Which ones should we shut down? 
 select product_category, product_sub_category, sum(profit) as total_profit 
 from pract group by product_category, product_sub_category 
 order by sum(profit) desc;
@@ -36,7 +36,7 @@ from pract group by prod_id order by sum(profit) desc;
             
 select * from market_fact_full where prod_id = 'Prod_17' and abs(Profit) > Sales;
 
--- 1.4 What is the category and sub category wise profit after removing the above products? 
+-- 1.4 What is the category and sub-category-wise profit after removing the above products? 
 select product_category, product_sub_category, sum(profit) as total_profit 
 from pract 
 where prod_id not in 
@@ -46,7 +46,7 @@ group by product_category, product_sub_category
 order by sum(profit) desc;
 
 
--- 1.5 Which customers are most profitable and generate most revenue? 
+-- 1.5 Which customers are most profitable and generate the most revenue? 
  SELECT cust_id, round(sum(sales)) as revenue, SUM(profit) AS total_profit 
  FROM market_fact_full GROUP BY cust_id order by sum(profit)desc;
 
@@ -68,8 +68,8 @@ group by c.state, c.city
 order by avg(m.ord_value) desc;
 
 
--- 1.8 Average time for order for every customer?
-with abcd as
+-- 1.8 Average time for an order for every customer?
+With abcd as
 (select a.cust_id, a.ord_id, 
 b.order_date,
 lag(b.order_date,1) over (partition by a.Cust_id order by b.order_date asc) previous_ord_date,
